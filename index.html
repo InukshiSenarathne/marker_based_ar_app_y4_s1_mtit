@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- include A-Frame obviously -->
+    <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+    <!-- include ar.js for A-Frame -->
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+</head>
+<body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs>
+        <a-marker preset="hiro">
+
+            <a-image id="image" src="pic1.jpg" position="0 0 0"  rotation="-90 0 0"></a-image> 
+
+            <a-image id="image" src="pic2.jpg" position="1 0 1"  rotation="-90 0 0"></a-image>
+
+            <a-image id="image" src="pic3.jpg" position="-1 0 -1" rotation="-90 0 0"></a-image>
+
+            <a-image id="image" src="pic4.jpg" position="-1 0 1" rotation="-90 0 0"></a-image>
+
+            <a-image id="image" src="pic5.jpg" position="1 0 -1" rotation="-90 0 0"></a-image>
+            
+        </a-marker>
+    <a-entity camera></a-entity>
+    </a-scene>
+</body>
+</html>
